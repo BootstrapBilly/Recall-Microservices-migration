@@ -22,7 +22,6 @@ exports.check_email = async (req, res, next) => {
 
     catch (error) {
 
-        console.log(error)//if there was an error, log it and send a 500 server error
         return res.status(500).json({ message: "Sorry, something went wrong with our server" })
     }
 
